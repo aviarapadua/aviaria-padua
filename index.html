@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        box-sizing: border-box;
+        color: #FFFFFF;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background-color: #000000;
+        display: grid;
+        place-items: center;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .avatar-header {
+        border-radius: 100%;
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    .avatar-main {
+        max-width: 30rem;
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    .socmed-icon {
+        width: 60%;
+        transition: scale .5s ease;
+    }
+
+    .socmed-icon:hover {
+        scale: 1.1;
+    }
+
+    .socmed-container {
+        display: grid;
+        place-items: center;
+    }
+
+    p,
+    h1 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .avatar-header {
+        display: none;
+    }
+
+    @media screen and (max-width: 400px) {
+
+        h1 {}
+
+        .avatar-main {
+            display: none;
+            max-width: 30rem;
+            border-radius: 100%;
+        }
+
+        .avatar-header {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <img class="avatar-header"
+            src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/365416143_687351883190407_2918415399149695487_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeG_yzQajKhhizgR-_RQQgvlb_puH5Ab_Ohv-m4fkBv86Af-Kkj9GzlKZiAifRqC91lbluKwbgfhhlo8hpxve9eq&_nc_ohc=cubhWhCOqOcAX8cuiP8&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfDVnpsSiQmSahmeD-T5mDYSuBPaYcwWz3e-TJlTR9M0XQ&oe=64D4F73C"
+            alt="">
+        <h1 class="header-title">Aviaria Padua</h1>
+    </header>
+    <main>
+        <div class="">
+            <a href="">
+                <div class="socmed-container">
+                    <img class="socmed-icon" src="img/facebook.png" alt="">
+                </div>
+            </a>
+            <p>Visit my Facebook</p>
+        </div>
+
+        <img class="avatar-main hidden"
+            src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/365416143_687351883190407_2918415399149695487_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeG_yzQajKhhizgR-_RQQgvlb_puH5Ab_Ohv-m4fkBv86Af-Kkj9GzlKZiAifRqC91lbluKwbgfhhlo8hpxve9eq&_nc_ohc=cubhWhCOqOcAX8cuiP8&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfDVnpsSiQmSahmeD-T5mDYSuBPaYcwWz3e-TJlTR9M0XQ&oe=64D4F73C"
+            alt="">
+
+        <div class="">
+            <a href="">
+                <div class="socmed-container">
+                    <img class="socmed-icon" src="img/youtube.png" alt="">
+                </div>
+            </a>
+            <p>Visit my Youtube</p>
+        </div>
+    </main>
+</body>
+
+</html>
